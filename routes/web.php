@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/file', function () {
+    return view('file',[
+        "name" =>"robert",
+        "email"=>"r.dimassenakusuma@gmail.com"
+    ]);
 });
+
